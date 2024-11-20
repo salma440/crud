@@ -115,18 +115,53 @@ th ,td{
     }
 }
 
-/* Media Query للهواتف الذكية */
 @media (max-width: 576px) {
+    body {
+        background: #222;
+        color: aliceblue;
+        font-family: system-ui;
+    }
+    
+    .crud {
+        width: 90%;
+        margin: auto;
+    }
+    
+    input, button {
+        font-size: 16px;
+    }
+    
+    .price input {
+        width: 100%;
+    }
+    
+    table {
+        width: 100%;
+        margin: auto;
+    }
+    
     .crud {
         width: 100%;
+        padding: 10px;
     }
 
     .price input {
         width: 100%;
     }
 
+    table th, table td {
+        font-size: 12px;
+        padding: 8px 5px;
+    }
+
+    #total {
+        font-size: 18px;
+        padding: 5px;
+    }
+
     .btnSearch {
         flex-direction: column;
+        margin-top: 10px;
     }
 
     .btnSearch button {
@@ -134,8 +169,14 @@ th ,td{
         margin-bottom: 10px;
     }
 
-    input, button {
+    button {
         font-size: 14px;
+        padding: 10px;
+    }
+    
+    input, select {
+        font-size: 14px;
+        padding: 10px;
     }
 }
 
